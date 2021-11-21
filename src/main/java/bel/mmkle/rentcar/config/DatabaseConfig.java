@@ -19,6 +19,10 @@ public class DatabaseConfig {
         String username = System.getenv("JDBC_DATABASE_USERNAME");
         String password = System.getenv("JDBC_DATABASE_PASSWORD");
 
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println(dbUrl + " " + username);
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
         BasicDataSource basicDataSource = new BasicDataSource();
         basicDataSource.setUrl(dbUrl);
         basicDataSource.setUsername(username);
